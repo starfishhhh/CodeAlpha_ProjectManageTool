@@ -1,5 +1,4 @@
-const API_URL = "http://localhost:5000/api";
-
+const API_URL = "https://codealpha-project-management-api.onrender.com/api";
 
 // Register
 const registerForm = document.getElementById("registerForm");
