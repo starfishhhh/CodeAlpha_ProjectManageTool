@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Projects</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <h2>Project Manager</h2>
+
+        <div>
+            <span id="welcomeUser"></span>
+            <button id="logoutBtn">Logout</button>
+        </div>
+    </nav>
+
+
+    <main class="projects-container">
+
+        <div class="page-header">
+            <div>
+                <h1>My Projects</h1>
+                <p>Create and manage your projects.</p>
+            </div>
+
+            <button id="showProjectFormBtn">
+                + New Project
+            </button>
+        </div>
+
+
+        <!-- Create Project Form -->
+
+        <div id="projectFormContainer" class="form-container hidden">
+
+            <h2>Create New Project</h2>
+
+            <form id="projectForm">
+
+                <input
+                    type="text"
+                    id="projectName"
+                    placeholder="Project name"
+                    required
+                >
+
+                <textarea
+                    id="projectDescription"
+                    placeholder="Project description"
+                ></textarea>
+
+                <button type="submit">
+                    Create Project
+                </button>
+
+                <button
+                    type="button"
+                    id="cancelProjectBtn"
+                >
+                    Cancel
+                </button>
+
+            </form>
+
+            <p id="projectMessage"></p>
+
+        </div>
+
+
+        <!-- Projects List -->
+
+        <div id="projectsList" class="projects-grid">
+            <p>Loading projects...</p>
+        </div>
+
+    </main>
+
+
+    <script src="../js/projects.js"></script>
+
+</body>
+</html>

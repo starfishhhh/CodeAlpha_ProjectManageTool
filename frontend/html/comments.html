@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Comments</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <h2>Project Manager</h2>
+
+        <div>
+            <button id="backBtn">← Project Board</button>
+            <button id="logoutBtn">Logout</button>
+        </div>
+    </nav>
+
+
+    <main class="board-container">
+
+        <div class="project-header">
+            <div>
+                <h1>Task Comments</h1>
+                <p>Communicate with your team about this task.</p>
+            </div>
+        </div>
+
+
+        <div class="form-container">
+
+            <h2>Add Comment</h2>
+
+            <form id="commentForm">
+
+                <textarea
+                    id="commentText"
+                    placeholder="Write your comment..."
+                    required
+                ></textarea>
+
+                <button type="submit">
+                    Add Comment
+                </button>
+
+            </form>
+
+            <p id="commentMessage"></p>
+
+        </div>
+
+
+        <div class="form-container">
+
+            <h2>Comments</h2>
+
+            <div id="commentsList">
+                <p>Loading comments...</p>
+            </div>
+
+        </div>
+
+    </main>
+
+
+    <script src="../js/comments.js"></script>
+
+</body>
+</html>
